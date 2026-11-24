@@ -1,0 +1,291 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f5f7fb;
+    color: #222;
+}
+
+/* Navbar */
+header {
+    background: #101b3f;
+    padding: 18px 8%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h2 {
+    color: white;
+    font-size: 28px;
+}
+
+.navbar h2 span {
+    color: #00d4ff;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #00d4ff;
+}
+
+/* Hero */
+.hero {
+    min-height: 450px;
+    background: linear-gradient(135deg, #101b3f, #1769aa);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 10%;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #00d4ff;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 650px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #00d4ff;
+    color: #101b3f;
+    padding: 13px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Common Sections */
+section {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 32px;
+    color: #101b3f;
+    margin-bottom: 30px;
+}
+
+/* About */
+.about p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+/* Services */
+.services {
+    background: #eaf3ff;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.service-card {
+    background: white;
+    padding: 30px 20px;
+    width: 230px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px #00000012;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+}
+
+.service-card h3 {
+    color: #1769aa;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    line-height: 1.6;
+}
+
+/* Team */
+.team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.team-card {
+    background: white;
+    padding: 25px;
+    width: 230px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px #00000012;
+}
+
+.avatar {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.team-card h3 {
+    color: #1769aa;
+    margin-bottom: 8px;
+}
+
+/* Achievements */
+.achievements {
+    background: #101b3f;
+    color: white;
+}
+
+.achievements h2 {
+    color: white;
+}
+
+.achievement-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.achievement-container h3 {
+    color: #00d4ff;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+/* Testimonials */
+.testimonials {
+    background: #eaf3ff;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.testimonial-card {
+    background: white;
+    padding: 30px;
+    width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px #00000012;
+}
+
+.testimonial-card p {
+    line-height: 1.7;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.testimonial-card h3 {
+    color: #1769aa;
+}
+
+/* Contact */
+.contact p {
+    margin-bottom: 25px;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    width: 100%;
+}
+
+.contact button {
+    background: #1769aa;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact button:hover {
+    background: #101b3f;
+}
+
+/* Footer */
+footer {
+    background: #101b3f;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    line-height: 1.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .achievement-container {
+        gap: 25px;
+    }
+}
